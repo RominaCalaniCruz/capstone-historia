@@ -39,7 +39,7 @@ const navLinks = siteConfig.headerNavLinks || [];
                     {navLinks.map((link) => (
                         <li class=" hover:scale-105 transition-all">
                             <NavLink
-                                class="bg-gradient-to-r from-sky-200 to-blue-400  dark:from-purple-800 dark:to-purple-900 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]"
+                                class="px-4 mb-12 sm:px-5 bg-gradient-to-r from-sky-200 to-blue-400  dark:from-purple-800 dark:to-purple-900 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]"
                                 href={link.href}
                             >
                                 {link.text}
@@ -58,7 +58,7 @@ const navLinks = siteConfig.headerNavLinks || [];
 <style>
     @media (max-width: 767px) {
         .menu {
-            @apply flex-col gap-1 absolute -top-2.5 -left-2.5 max-w-64 px-3 pt-16 pb-10 z-20 bg-main border border-dashed border-main invisible opacity-0;
+            @apply flex-col gap-5 absolute -top-2.5 -left-2.5 max-w-64 px-3 pt-16 pb-10 z-20 bg-main border border-dashed border-main invisible opacity-0;
             width: calc(100% + 1.25rem);
         }
         .menu.is-visible {
