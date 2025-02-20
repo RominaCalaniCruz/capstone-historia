@@ -1,110 +1,88 @@
-# Stablo - Astro Blog Template with MDX
+# Evaluación Intermedia Blog - Grupo C  
 
-Stablo Astro is an Astro version of [Stablo - Next.js Blog Template](https://stablo-pro.web3templates.com/), #1 template for Next.js & Sanity CMS. This is an Astro version of the same template.
+### **Historia de la Ingeniería de Software**  
 
-This free template is sponsored by [Web3Templates](https://web3templates.com)
+- **Equipo:** C  
+- **Tema:** *Trends in Platform Engineering*  
+- **Líder:** [Santiago.Conde0125@jala.university](mailto:Santiago.Conde0125@jala.university)  
+- **Docente:** [Juan.gonzales@jala.university](mailto:Juan.gonzales@jala.university)  
 
-## Live Demo
+---
 
-### [https://stablo-astro.web3templates.com/](https://stablo-astro.web3templates.com/)
+## Criterios del Trabajo
 
-### [Download Stablo Astro Template](https://web3templates.com/templates/stablo-minimal-blog-website-template)
+### 1. **Estructura Planificada para el Blog**  
 
-## Deploy on Vercel
+#### a. Resumen del Blog  
+El resumen debe presentar una visión general clara y concisa del tema de tecnología emergente, incluyendo:  
+- El propósito del blog.  
+- Los aspectos principales que se abordan.  
+- El impacto o relevancia del tema.  
+**Extensión sugerida:** entre 150 y 200 palabras.  
 
-Click the below link to deploy this template on Vercel
+#### b. Secciones del Blog  
+- Definir los temas por secciones.  
+- Dividir el contenido en subtemas organizados lógicamente.  
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=hhttps://github.com/web3templates/stablo-astro&project-name=stablo-astro&repository-name=stablo-astro&demo-title=Stablo%20Astro%20Blog%20Template&demo-description=Stablo%20Astro%20is%20a%20starter%20blog%20template%20for%20Astro%20built%20with%20MDX%20&%20TailwindCSS&demo-url=https%3A%2F%2Fstablo-astro.web3templates.com%2F&demo-image=https://user-images.githubusercontent.com/1884712/169838344-e32b7426-621a-45a4-aba8-afedf3377e1f.jpeg)
+**Ejemplo de Secciones:**  
+- Introducción al tema de *Platform Engineering*.  
+- Estado actual y tendencias clave.  
+- Retos actuales y posibles soluciones.  
+- Conclusión: impacto futuro de esta tecnología.
 
-![Screenshot](https://user-images.githubusercontent.com/1884712/210131622-59ac9ff8-43fe-4a7d-b7fc-8b3b981baa52.png)
+#### c. Bibliografía  
+- Proporcionar una lista de fuentes confiables utilizadas en la investigación (mínimo 5).  
+- Usar formato **APA**.  
+- Las fuentes pueden incluir artículos académicos, reportes de industria y publicaciones de expertos.  
 
-## Installation
+---
 
-If you are reading this on github, you can click on the "Use this template" button above to create a new repository from astroship to your account. Then you can do a `git clone` to clone it to your local system.
+### 2. **Distribución del Contenido entre los Miembros del Equipo**  
 
-Alternatively, you can clone the project directly from this repo to your local system.
+Asignar a cada miembro una sección específica del blog.  
 
-### 1. Clone the repo
+**Ejemplo de Distribución:**  
 
-```bash
-git clone https://github.com/web3templates/stablo-astro.git myProjectName
-# or
-git clone https://github.com/web3templates/stablo-astro.git .
-```
+| Miembro del Equipo  | Sección Asignada                     |
+|----------------------|--------------------------------------|
+| Compañero 1          | Estado actual de la tecnología.      |
+| Compañero 2          | Aplicaciones prácticas.             |
+| Compañero 3          | Retos y limitaciones.               |
+| Compañero 4          | Impacto futuro y conclusiones.      |
 
-The `.` will clone it to the current directory so make sure you are inside your project folder first.
+---
 
-### 2. Install Dependencies
+### 3. **Cronograma de Trabajo**  
 
-```bash
-npm install
-# or
-yarn install
-# or (recommended)
-pnpm install
-```
+| Fecha               | Actividad                             |
+|---------------------|---------------------------------------|
+| 01/02/2025          | Entrega del resumen inicial del blog. |
+| 05/02/2025          | Revisión grupal de las secciones.     |
+| 10/02/2025          | Publicación final en el sitio.        |
 
-### 3. Start development Server
+- Definir plazos para la entrega de cada sección.  
+- Establecer revisiones grupales para asegurar coherencia y calidad.  
+- Asegurar que para el avance del blog se cuente al menos con los títulos de las secciones.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or (recommended)
-pnpm dev
-```
+---
 
-### Preview & Build
+## Notas Importantes sobre el Proyecto  
 
-```bash
-npm run build
-npm run preview
-# or
-yarn build
-yarn preview
-# or (recommended)
-pnpm build
-pnpm preview
-```
+### Puntos Clave:
 
-We recommend using [pnpm](https://pnpm.io/) to save disk space on your computer.
+- **`content/`:** Aquí se encuentra todo el contenido del blog.  
+  - **`blogs/`:** Sección principal para la creación y edición de blogs.  
+  - **`projects/`:** Contenido relacionado con proyectos específicos.  
+  - **`pages/`:** Páginas estáticas del menú, "Contacto", "Tags", "Inicio".  
 
-### Other Commands
+- **`public/`:** Carpeta para recursos gráficos como imágenes e íconos.  
 
-```bash
-pnpm astro ...
-pnpm astro add
-pnpm astro --help
-```
+### Notas Adicionales:  
 
-## Project Structure
+- El proyecto es **estático** y utiliza archivos `.md` para manejar el contenido de las páginas.  
+- En *`content/`* puedes agregar, borrar o modificar el contenido dependiendo de si deseas actualizar secciones como 'projects', 'blogs' o 'pages'.  
+- Todos los recursos gráficos deben ubicarse en *`public/`*.  
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```
-/
-├── public/
-│   └── ...
-├── src/
-│   ├── components/
-│   │   └── ...
-│   ├── layouts/
-│   │   └── ...
-│   └── pages/
-│       └── ...
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## TailwindCSS
-
-TailwindCSS is already configured in this repo, so you can start using them without any installation.
-
-## 👀 Want to learn more?
-
-Feel free to check out [Astro Docs](https://docs.astro.build) or jump into our [Discord Chat](https://web3templates.com/discord).
-
-[![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
+**¡Éxito! 🚀**

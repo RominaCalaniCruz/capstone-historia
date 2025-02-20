@@ -1,0 +1,44 @@
+---
+import type { GetStaticPathsOptions, Page } from 'astro';
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Pagination from '../../components/Pagination.astro';
+import PostPreview from '../../components/PostPreview.astro';
+import Subscribe from '../../components/Subscribe.astro';
+import siteConfig from '../../data/site-config';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
+import { latestPosts } from '@/utils/content';
+import Postlist from '@/components/postlist.astro';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+    const posts = await getCollection('blog');
+
+    // Ordenar alfabéticamente por el título
+    posts.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+    return paginate(posts, { pageSize: siteConfig.postsPerPage || 4 });
+}
+
+type Props = { page: Page<CollectionEntry<'blog'>> };
+
+const { page } = Astro.props;
+const blog = page.data;
+---
+
+<BaseLayout
+    title="Blog"
+    description="Embark on a journey of personal insights and experiences through my blog"
+    image={{ src: '/dante-preview.jpg', alt: 'The preview of the site' }}
+    showHeader={false}
+>
+    <!-- <main>
+        <div class="grid gap-10 lg:gap-10 md:grid-cols-2">
+            {latestPosts.map((post) => <Postlist post={post} aspect="landscape" />)}
+        </div>
+    </main> -->
+    <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Blogs disponibles:</h1>
+    <div class="grid gap-4 lg:gap-5 md:grid-cols-2">
+        {blog.map((post) => <PostPreview post={post} class="mb-2 sm:mb-10" />)}
+    </div>
+    <Pagination page={page} class="my-8 sm:my-8" />
+</BaseLayout>

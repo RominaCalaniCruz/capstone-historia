@@ -1,36 +1,57 @@
 ---
-import Container from "@/components/container.astro";
-import Postlist from "@/components/postlist.astro";
-import Layout from "@/layouts/Layout.astro";
-import { latestPosts } from "@/utils/content";
-// Use Astro.glob() to fetch all posts, and then sort them by date.
-// const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
-//   (a, b) =>
-//     new Date(b.frontmatter.publishDate).valueOf() -
-//     new Date(a.frontmatter.publishDate).valueOf()
-// );
-// console.log(posts[0].frontmatter.image);
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import Hero from '../components/Hero.astro';
+import PostPreview from '../components/PostPreview.astro';
+import ProjectPreview from '../components/ProjectPreview.astro';
+import siteConfig from '../data/site-config';
+import { sortItemsByDateDesc } from '../utils/data-utils';
+
+const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
+const featuredPosts = posts.filter(({ data }) => data.isFeatured);
+
+const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
+const featuredProjects = projects.filter(({ data }) => data.isFeatured);
 ---
 
-<Layout title="">
-  <Container>
-    <main>
-      <div class="grid gap-10 lg:gap-10 md:grid-cols-2">
-        {
-          latestPosts
-            .slice(0, 2)
-            .map((post) => (
-              <Postlist post={post} aspect="landscape" preloadImage={true} />
-            ))
-        }
-      </div>
-      <div class="grid gap-10 mt-10 lg:gap-10 md:grid-cols-2 xl:grid-cols-3">
-        {
-          latestPosts
-            .slice(2)
-            .map((post) => <Postlist post={post} aspect="square" />)
-        }
-      </div>
-    </main>
-  </Container>
-</Layout>
+<BaseLayout description={siteConfig.description} image={siteConfig.image}>
+    <Hero />
+    {/* Renderizamos la imagen2 después de la descripción */}
+    <!-- {siteConfig.image2?.src && (
+        <section class="image2-section my-16">
+            <img class="w-full" src={siteConfig.image2.src} alt={siteConfig.image2.alt || 'Imagen extra'} />
+        </section>
+    )} -->
+
+    {
+        /*
+        featuredProjects?.length > 0 && (
+            <div class="mb-16 sm:mb-24">
+                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Projects</h2>
+                {featuredProjects.map((project) => (
+                    <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
+                ))}
+                <div class="mt-12 sm:mt-16">
+                    <Button href="/projects">View All Projects</Button>
+                </div>
+            </div>
+        )
+    */
+    }
+    {
+        /*
+        featuredPosts?.length > 0 && (
+            <div class="mb-16 sm:mb-24">
+                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Orden de lectura:</h2>
+                {featuredPosts.map((post) => (
+                    <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
+                ))}
+                <div class="mt-12 sm:mt-16">
+                    <Button href="/blog">View All Posts</Button>
+                </div>
+            </div>
+        )
+    */
+    }
+</BaseLayout>
