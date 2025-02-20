@@ -36,7 +36,7 @@ seo:
 - [Lilian.Lopez0125@jala.university](mailto:Lilian.Lopez0125@jala.university)
   - **Casos de éxito: aplicaciones y tecnologias usadas** [Leer →](/blog/post-11)
 - [Fabricio.Flores0125@jala.university](mailto:Fabricio.Flores0125@jala.university)
-  - **'¿Qué es la ingeniería de plataformas? - Historia'** [Leer →](/blog/post-14)
+  - **¿Qué es la ingeniería de plataformas? - Historia** [Leer →](/blog/post-14)
 - [Juan.Peraza0125@jala.university](mailto:Juan.Peraza0125@jala.university)
   - **Automatización y DevOps en Cloud Computing** [Leer →](https://juanperaza0125.github.io/blog/post-13)
 - [Fabricio.Ibarra0125@jala.university](mailto:Fabricio.Ibarra0125@jala.university)
