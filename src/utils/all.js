@@ -1,37 +1,13 @@
-import getReadingTime from "reading-time";
-import { toString } from "mdast-util-to-string";
-
 /** Format Date */
 export const getFormattedDate = (date) =>
-  date
-    ? (() => {
-        const fecha = new Date(date);
-        
-        const mes = fecha.toLocaleDateString("es-ES", { month: "long" });
-        const dia = fecha.getDate();
-        const año = fecha.getFullYear();
+    date
+        ? (() => {
+              const fecha = new Date(date);
 
-        return `${mes.charAt(0).toUpperCase() + mes.slice(1)} ${dia}, ${año}`;
-      })()
-    : "";
-    
+              const mes = fecha.toLocaleDateString('es-ES', { month: 'long' });
+              const dia = fecha.getDate();
+              const año = fecha.getFullYear();
 
-/** Estimated Reading time */
-export function remarkReadingTime() {
-  return function (tree, { data }) {
-    const textOnPage = toString(tree);
-    const readingTime = getReadingTime(textOnPage);
-
-    data.astro.frontmatter.estReadingTime = readingTime.minutes;
-  };
-}
-
-/** Check if an Image Path is Relative or Absolute */
-export const checkImageUrl = (image, url) => {
-  try {
-    new URL(image);
-    return image;
-  } catch (error) {
-    return new URL(image, url).toString();
-  }
-};
+              return `${mes.charAt(0).toUpperCase() + mes.slice(1)} ${dia}, ${año}`;
+          })()
+        : '';
