@@ -12,7 +12,7 @@ const navLinks = siteConfig.headerNavLinks || [];
 <nav class="min-h-10 pt-4 pb-8 relative sm:min-h-14 sm:pb-12 md:pt-8">
     {
         navLinks.length > 0 && (
-            <div class="w-full max-w-4xl mx-auto relative">
+            <div class="w-full flex flex-row items-center max-w-4xl mx-auto relative">
                 <button
                     class="menu-toggle w-8 h-8 -ml-1 flex items-center justify-center relative z-30 md:hidden"
                     aria-label="Open Menu"
@@ -21,11 +21,19 @@ const navLinks = siteConfig.headerNavLinks || [];
                 >
                     <span class="menu-toggle-icon w-6 h-px relative bg-current" />
                 </button>
-                <ul id="menu-items" class="menu flex gap-10 items-center ">
-                    <a class="w-40 dark:hidden" href="/">
+                <div class="flex w-full sm:hidden justify-center items-center">
+                    <a class="flex w-40 dark:hidden ms-1" href="/">
                         <Image src={logoImage} alt="Logo" />
                     </a>
-                    <a class="hidden w-40 dark:block" href="/">
+                    <a class="hidden w-40 dark:block hidden" href="/">
+                        <Image src={darkLogo} alt="Logo" />
+                    </a>
+                </div>
+                <ul id="menu-items" class="menu flex gap-10 items-center ">
+                    <a class="w-40 dark:hidden hidden sm:block" href="/">
+                        <Image src={logoImage} alt="Logo" />
+                    </a>
+                    <a class="hidden w-40 sm:dark:block hidden" href="/">
                         <Image src={darkLogo} alt="Logo" />
                     </a>
                     {navLinks.map((link) => (
