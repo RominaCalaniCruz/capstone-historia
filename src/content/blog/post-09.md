@@ -1,6 +1,6 @@
 ---
 title: '6. Conclusión General'
-excerpt: 'Realizado por: el equipo. '
+excerpt: ''
 publishDate: '2025-02-15T11:39:36.050Z'
 image: '/blog/ejemplo.png'
 tags: [design, architecture, interior]
@@ -9,13 +9,7 @@ seo:
     src: '/post-10.jpg'
     alt: Light straight lines
 category: 'lifestyle'
-authors:
-  - name: 'Mario'
-    bio: 'Desarrollador web y escritor.'
-    photo: '/authors/mario.webp'
-  - name: 'Ana'
-    bio: 'Ingeniera de software y entusiasta del diseño UX.'
-    photo: '/authors/erika.PNG'
+authors: []
 ---
 
 ![Light straight lines](/post-10.jpg)

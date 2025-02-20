@@ -1,6 +1,6 @@
 ---
 title: '1.	Introducción a la ingeniería de plataformas'
-excerpt: 'Realizado por: Nicolas parra y Fabricio Flores. La ingeniería de plataformas optimiza el desarrollo de software al crear entornos eficientes para los equipos. En este blog exploramos sus conceptos clave, beneficios y su impacto en la productividad. Descubre cómo la automatización, DevOps y las plataformas internas están transformando la industria tecnológica. 🚀'
+excerpt: 'La ingeniería de plataformas optimiza el desarrollo de software al crear entornos eficientes para los equipos. En este blog exploramos sus conceptos clave, beneficios y su impacto en la productividad. Descubre cómo la automatización, DevOps y las plataformas internas están transformando la industria tecnológica. 🚀'
 publishDate: '2025-02-23T11:39:36.050Z'
 image: '/blog/ejemplo.png'
 isFeatured: true
@@ -11,8 +11,11 @@ seo:
     alt: Wavy lines
 category: 'lifestyle'
 authors:
-  - name: 'Mario'
-    bio: 'Desarrollador web y escritor.'
+  - name: 'Fabricio Flores'
+    bio: 'Estudiante de Ingenieria de Software.'
+    photo: '/authors/Flores.jpg'
+  - name: 'Nicolás Parra'
+    bio: 'Estudiante de Ingenieria de Software.'
     photo: '/authors/generic.png'
 ---
 

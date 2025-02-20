@@ -1,6 +1,6 @@
 ---
 title: '5. Desafíos y el futuro de la ingeniería de plataformas'
-excerpt: 'Realizado por: Romina Calani, Moises Hernandez, Mercedez Soto, Joaquin Antezana y Santiago Conde. La ingeniería de plataformas enfrenta desafíos como la escalabilidad, la automatización y la adopción de DevOps. Este blog explora el presente y futuro de la disciplina, analizando tendencias clave, mejores prácticas y cómo las plataformas pueden optimizar la productividad y eficiencia en la industria tecnológica. 🚀'
+excerpt: 'La ingeniería de plataformas enfrenta desafíos como la escalabilidad, la automatización y la adopción de DevOps. Este blog explora el presente y futuro de la disciplina, analizando tendencias clave, mejores prácticas y cómo las plataformas pueden optimizar la productividad y eficiencia en la industria tecnológica. 🚀'
 publishDate: '2025-02-16T11:39:36.050Z'
 image: '/blog/ejemplo.png'
 tags:
@@ -13,9 +13,21 @@ seo:
     alt: Light straight lines
 category: 'lifestyle'
 authors:
-  - name: 'Mario'
-    bio: 'Desarrollador web y escritor.'
+  - name: 'Moisés Hernández'
+    bio: 'Estudiante de Ingenieria de Software.'
+    photo: '/authors/Moises.jpg'
+  - name: 'Romina Calani'
+    bio: 'Estudiante de Ingenieria de Software.'
+    photo: '/authors/Romina.png'
+  - name: 'Mercedes Soto'
+    bio: 'Estudiante de Ingenieria de Software.'
+    photo: '/authors/Soto.png'
+  - name: 'Joaquín Antezana'
+    bio: 'Estudiante de Ingenieria de Software.'
     photo: '/authors/generic.png'
+  - name: 'Santiago Conde'
+    bio: 'Estudiante de Ingenieria de Software.'
+    photo: '/authors/Conde.png'
 ---
 
 ![Light straight lines](/post-10.jpg)

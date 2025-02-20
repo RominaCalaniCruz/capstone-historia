@@ -1,6 +1,6 @@
 ---
 title: '2. Tendencias de Plataformas'
-excerpt: 'Realizado por: Juan Peraza, Leonel Toloza y Fabricio Ibarra. Explora las tendencias emergentes en la ingeniería de plataformas y su impacto en el desarrollo de software. Desde automatización y DevOps hasta plataformas internas, este blog analiza innovaciones clave que optimizan la eficiencia de los equipos y transforman la industria tecnológica. Mantente al día con los cambios que están dando forma al futuro. 📊'
+excerpt: 'Explora las tendencias emergentes en la ingeniería de plataformas y su impacto en el desarrollo de software. Desde automatización y DevOps hasta plataformas internas, este blog analiza innovaciones clave que optimizan la eficiencia de los equipos y transforman la industria tecnológica. Mantente al día con los cambios que están dando forma al futuro. 📊'
 publishDate: '2025-02-20T11:39:36.050Z'
 image: '/blog/ejemplo.png'
 tags:
@@ -12,8 +12,14 @@ seo:
     alt: Abstract snow
 category: 'lifestyle'
 authors:
-  - name: 'Mario'
-    bio: 'Desarrollador web y escritor.'
+  - name: 'Juan Peraza'
+    bio: 'Estudiante de Ingenieria de Software.'
+    photo: '/authors/Peraza.png'
+  - name: 'Leonel Toloza'
+    bio: 'Estudiante de Ingenieria de Software.'
+    photo: '/authors/generic.png'
+  - name: 'Fabricio Ibarra'
+    bio: 'Estudiante de Ingenieria de Software.'
     photo: '/authors/generic.png'
 ---
 
