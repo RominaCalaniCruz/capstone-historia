@@ -12,15 +12,15 @@ import { latestPosts } from "@/utils/content";
 // );
 ---
 
-<Layout title="Archive">
+<Layout title="Entradas del blog">
   <Container>
     <Pagetitle>
-      <Fragment slot="title">Archive</Fragment>
-      <Fragment slot="desc">See all posts we have ever written.</Fragment>
+      <Fragment slot="title">Entradas</Fragment>
+      <Fragment slot="desc"></Fragment>
     </Pagetitle>
     <main>
-      <div class="grid gap-10 mt-10 lg:gap-10 md:grid-cols-2 xl:grid-cols-3">
-        {latestPosts.map((post) => <Postlist post={post} aspect="square" />)}
+      <div class="grid gap-10 lg:gap-10 md:grid-cols-2">
+        {latestPosts.map((post) => <Postlist post={post} aspect="landscape" />)}
       </div>
     </main>
   </Container>
