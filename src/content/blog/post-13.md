@@ -11,10 +11,10 @@ seo:
     src: '/post-13.jpg'
     alt: Abstract snow
 category: 'lifestyle'
-author:
-  name: 'Mario'
-  bio: 'Desarrollador web y escritor.'
-  photo: '/authors/mario.webp'
+authors:
+  - name: 'Mario'
+    bio: 'Desarrollador web y escritor.'
+    photo: '/authors/generic.png'
 ---
 
 ![Abstract snow](/post-13.jpg)

@@ -10,10 +10,10 @@ seo:
     src: '/post-14.jpg'
     alt: Wavy lines
 category: 'lifestyle'
-author:
-  name: 'Romina Calani'
-  bio: 'Desarrollador web y escritor.'
-  photo: '/authors/erika.PNG'
+authors:
+  - name: 'Mario'
+    bio: 'Desarrollador web y escritor.'
+    photo: '/authors/generic.png'
 ---
 
 ![Wavy lines](/post-14.jpg)

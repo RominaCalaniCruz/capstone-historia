@@ -24,12 +24,12 @@ const blog = defineCollection({
         tags: z.array(z.string()).default([]),
         seo: seoSchema.optional(),
         image: z.string().optional(),
-        author: z.object({
+        authors: z.array(z.object({
             name: z.string(),
             bio: z.string().optional(),
             photo: z.string().optional(),
             url: z.string().optional(),
-        }).optional(),
+        })),
     })
 });
 

@@ -12,10 +12,10 @@ seo:
     src: '/post-12.jpg'
     alt: Wind turbine
 category: 'lifestyle'
-author:
-  name: 'Mario'
-  bio: 'Desarrollador web y escritor.'
-  photo: '/authors/mario.webp'
+authors:
+  - name: 'Mario'
+    bio: 'Desarrollador web y escritor.'
+    photo: '/authors/generic.png'
 ---
 
 ![Wind turbine](/post-12.jpg)

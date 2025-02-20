@@ -50,14 +50,26 @@ const TitleTag = headingLevel;
         </div> -->
         <div class="flex items-center mt-3 space-x-3 justify-evenly text-gray-500 dark:text-gray-400">
             <div class="flex items-center gap-3">
-                <div class="relative flex-shrink-0 w-5 h-5">
+                <!-- <div class="relative flex-shrink-0 w-5 h-5">
                     {
                         post.data.author?.photo && (
                             <Image src={post.data.author?.photo} alt="Author Photo" width={40} height={40} loading="lazy" class="rounded-full" />
                         )
                     }
                 </div>
-                <span class="text-sm">{post.data.author?.name}</span>
+                <span class="text-sm">{post.data.author?.name}</span> -->
+                <div class="flex items-center gap-3">
+                    {
+                        post.data.authors.map((author) => (
+                            <div class="flex items-center gap-2">
+                                {author.photo && (
+                                    <img src={author.photo} alt={`Foto de ${author.name}`} width={40} height={40} loading="lazy" class="rounded-full" />
+                                )}
+                                <span class="text-sm">{author.name}</span>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
             <span class="text-xs text-gray-300 dark:text-gray-600"> &bull;</span>
             <!-- <FormattedDate date={publishDate} />

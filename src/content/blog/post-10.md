@@ -12,10 +12,10 @@ seo:
     src: '/post-10.jpg'
     alt: Light straight lines
 category: 'lifestyle'
-author:
-  name: 'Mario'
-  bio: 'Desarrollador web y escritor.'
-  photo: '/authors/mario.webp'
+authors:
+  - name: 'Mario'
+    bio: 'Desarrollador web y escritor.'
+    photo: '/authors/generic.png'
 ---
 
 ![Light straight lines](/post-10.jpg)

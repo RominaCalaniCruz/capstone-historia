@@ -11,10 +11,10 @@ seo:
     src: '/post-11.jpg'
     alt: Empty road into the Horizon
 category: 'lifestyle'
-author:
-  name: 'Mario'
-  bio: 'Desarrollador web y escritor.'
-  photo: '/authors/mario.webp'
+authors:
+  - name: 'Mario'
+    bio: 'Desarrollador web y escritor.'
+    photo: '/authors/generic.png'
 ---
 
 ![Empty road into the Horizon](/post-11.jpg)
