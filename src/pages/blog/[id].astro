@@ -109,7 +109,7 @@ const { Content, headings } = await render(post);
             });
         });
 
-        document.addEventListener('astro:page-load', () => {
+        document.addEventListener('astro:after-swap', () => {
             generateTOC();
 
             const copyUrlButton = document.querySelector('.copy-url-button') as HTMLElement | null;
