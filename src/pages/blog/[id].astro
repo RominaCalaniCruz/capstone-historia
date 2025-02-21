@@ -31,6 +31,12 @@ const { Content, headings } = await render(post);
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? excerpt} image={seo?.image} pageType="article" showHeader={false}>
+    <button
+        id="backToTop"
+        class="hidden fixed bottom-5 right-5 px-3 py-2 text-white rounded-full shadow-lg hover:bg-green-700 transition bg-gradient-to-r from-green-600 to-green-500 dark:from-purple-800 dark:to-purple-900"
+    >
+        ↑
+    </button>
     <article class="mb-8 sm:mb-8">
         <header class="mb-2 sm:mb-4">
             <h1
@@ -87,6 +93,22 @@ const { Content, headings } = await render(post);
     </article>
 
     <script>
+        document.addEventListener('astro:page-load', () => {
+            const backToTopButton = document.getElementById('backToTop');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton!.style.display = 'block';
+                } else {
+                    backToTopButton!.style.display = 'none';
+                }
+            });
+
+            backToTopButton!.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
         document.addEventListener('astro:page-load', () => {
             generateTOC();
 
