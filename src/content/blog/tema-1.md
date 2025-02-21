@@ -20,7 +20,7 @@ authors:
 
 <h2 class="font-bold italic margin-b">Definición de la Ingeniería de Plataformas</h2>
 
-<h5 class="italic margin-t">Fabricio Flores</h5>
+<h5 class="italic margin-t">Escrito por Fabricio Flores</h5>
 
 <h3 class="font-bold centro margin-t">¿Qué es la ingeniería de plataformas?</h3>
 
@@ -28,7 +28,7 @@ authors:
 
 <h2 class="margin-t font-bold italic margin-b">Historia y Evolución</h2>
 
-<h5 class="italic margin-t">Fabricio Flores</h5>
+<h5 class="italic margin-t">Escrito por Fabricio Flores</h5>
 
 - Análisis de la evolución de este campo desde sus inicios hasta la actualidad
 
@@ -36,7 +36,7 @@ authors:
 
 <h2 class="font-bold italic margin-b">Comparativa con otros enfoques</h2>
 
-<h5 class="italic margin-t">Nicolas Parra</h5>
+<h5 class="italic margin-t">Escrito por Nicolas Parra</h5>
 
 - Diferencias entre la ingeniería de plataformas y metodologías como DevOps y SRE
 

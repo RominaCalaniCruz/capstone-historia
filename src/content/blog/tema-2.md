@@ -20,46 +20,41 @@ authors:
     photo: '/authors/generic.png'
 ---
 
-**Note:** This post was created using Chat GPT to demonstrate the features of the _[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/)_.
+<h2 class="font-bold italic margin-b">Tendencias en ingenieria de plataformas</h2>
 
-## **Tendencias en ingenieria de plataformas**
-
-#### **- (Fabricio Ibarra)**
+<h5 class="italic margin-t">Escrito por Fabricio Ibarra</h5>
 
 - Que es la Tendencia de plataformas en la ingeniería
 - Características de una ingeniería de plataformas y como identificarla como tendencia.
 
----
+<!-- <h3 class="font-bold centro margin-t">¿Qué es la ingeniería de plataformas?</h3> -->
 
-## **Tendencias Emergentes en Ingeniería de Plataformas**
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
-#### **- (Fabricio Ibarra)**
+<h2 class="margin-t font-bold italic margin-b">Tendencias Emergentes en Ingeniería de Plataformas</h2>
+
+<h5 class="italic margin-t">Escrito por Fabricio Ibarra</h5>
 
 - Cuales son esas tendencias y principales cambios y avances que están moldeando la industria. Hacer una mención de Cloud Computing como tendencia influyente.
 
----
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
-## **Plataforma Cloud Computing**
+<h2 class="font-bold italic margin-b">Plataforma Cloud Computing</h2>
 
-#### **- (Leonel Toloza)**
+<h5 class="italic margin-t">Escrito por Leonel Toloza</h5>
 
 - Definición y evolución de las plataformas en la nube.
 - Beneficios y desafíos de la adopción del Cloud Computing en las empresas.
 - Comparación entre diferentes modelos de nube: pública, privada e híbrida.
 
----
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
-## **Automatización y DevOps en Cloud Computing**
+<h2 class="font-bold italic margin-b">Automatización y DevOps en Cloud Computing</h2>
 
-#### **- (Juan Peraza)**
+<h5 class="italic margin-t">Escrito por Juan Peraza</h5>
 
 - Rol de la automatización en la gestión de plataformas en la nube.
 - Integración con DevOps para mejorar la eficiencia en el desarrollo.
 - Agregar algo relevante en caso de ser necesario, pero que no sea información repetida con otros subtemas.
 
----
-
-## Conclusion
-
-- Conclusión general del equipo.
-- Si tienes una idea de conclusión mandarla al grupo para que aportemos a esa conclusión y formular algo coherente entre todos.
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">

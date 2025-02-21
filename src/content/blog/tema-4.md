@@ -17,35 +17,28 @@ authors:
     photo: '/authors/generic.png'
 ---
 
-![Empty road into the Horizon](/post-11.jpg)
+<h2 class="font-bold italic margin-b">Aplicaciones donde se han usado con éxito</h2>
 
-**Note:** Las aplicaciones que se usaron en esos casos de exito, la empresa q lo implemento y la tecnología que se uso.
-
-## **Aplicaciones donde se han usado con éxito**
-
-#### **- (Lilian Lopez)**
+<h5 class="italic margin-t">Escrito por Lilian Lopez</h5>
 
 - Casos de uso en sectores como fintech, e-commerce y salud.
 
----
+<!-- <h3 class="font-bold centro margin-t">¿Qué es la ingeniería de plataformas?</h3> -->
 
-## **Empresas que implementaron estas soluciones**
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
-#### **- (Jaider Ramirez)**
+<h2 class="margin-t font-bold italic margin-b">Empresas que implementaron estas soluciones</h2>
+
+<h5 class="italic margin-t">Escrito por Jaider Ramirez</h5>
 
 - Ejemplos como Netflix con AWS, Spotify con Google Cloud, etc.
 
----
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
-## **Empresas que implementaron estas soluciones**
+<h2 class="font-bold italic margin-b">Tecnologías utilizadas en cada caso de éxito</h2>
 
-#### **- (Jaider Ramirez y Lilian Lopez)**
+<h5 class="italic margin-t">Escrito por Jaider Ramirez y Lilian Lopez</h5>
 
 - Herramientas clave como Kubernetes, Terraform, Jenkins, React, etc. O cualquier otra tecnología (herramienta o framework) que se haya usado en dicho caso de éxito.
 
----
-
-## Conclusion
-
-- Conclusión general del equipo.
-- Si tienes una idea de conclusión mandarla al grupo para que aportemos a esa conclusión y formular algo coherente entre todos.
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
