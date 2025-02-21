@@ -109,15 +109,31 @@ const { Content, headings } = await render(post);
             });
         });
 
-        // Ejecutar la función cuando la página se carga completamente
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                requestAnimationFrame(generateTOC);
-            }, 100);
+        document.addEventListener('astro:page-load', () => {
+            waitForContent('#post-content').then(() => generateTOC());
         });
+        // Esperar a que el contenido del post esté disponible en el DOM
+        async function waitForContent(selector: string, timeout = 3000) {
+            return new Promise<void>((resolve) => {
+                const content = document.querySelector(selector);
+                if (content) return resolve();
 
-        // También ejecutarla en cada carga de Astro (para cambios de ruta sin recargar)
-        document.addEventListener('astro:page-load', generateTOC);
+                const observer = new MutationObserver((mutations, obs) => {
+                    if (document.querySelector(selector)) {
+                        obs.disconnect();
+                        resolve();
+                    }
+                });
+
+                observer.observe(document.body, { childList: true, subtree: true });
+
+                // Opcional: Forzar la resolución tras un tiempo límite (previene bloqueos)
+                setTimeout(() => {
+                    observer.disconnect();
+                    resolve();
+                }, timeout);
+            });
+        }
 
         function generateTOC() {
             const content = document.getElementById('post-content') as HTMLElement | null;
