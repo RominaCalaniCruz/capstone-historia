@@ -4,7 +4,6 @@ excerpt: 'La ingeniería de plataformas optimiza el desarrollo de software al cr
 publishDate: '2025-02-23T11:39:36.050Z'
 image: '/blog/ejemplo.png'
 isFeatured: true
-
 seo:
   image:
     src: '/post-14.jpg'

@@ -3,9 +3,6 @@ title: '4. Casos de Éxito en la Ingeniería de Plataformas'
 excerpt: 'Descubre cómo la ingeniería de plataformas impulsa la innovación en el desarrollo de software. En este blog, exploramos casos de éxito de empresas que han optimizado sus flujos de trabajo, mejorado la colaboración entre equipos y acelerado la entrega de productos mediante plataformas internas, automatización y DevOps. ¡Inspírate con sus logros! 🎉'
 publishDate: '2025-02-17T11:39:36.050Z'
 image: '/blog/ejemplo.png'
-tags:
-  - Web
-  - Guide
 seo:
   image:
     src: '/post-11.jpg'

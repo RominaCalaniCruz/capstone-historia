@@ -32,7 +32,7 @@ const { Content, headings } = await render(post);
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? excerpt} image={seo?.image} pageType="article" showHeader={false}>
     <article class="mb-8 sm:mb-8">
-        <header class="mb-8">
+        <header class="mb-2 sm:mb-4">
             <h1
                 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight bg-gradient-to-r from-green-600 to-green-100 dark:from-purple-800 dark:to-purple-900
     bg-[length:100%_3px] bg-left-bottom bg-no-repeat
@@ -48,97 +48,135 @@ const { Content, headings } = await render(post);
         </header>
 
         <!-- Contenedor de la Tabla de Contenidos -->
-        <aside id="toc-container" class="hidden mb-6 p-4 border-l-4 border-green-500 bg-gray-100 dark:bg-gray-800 dark:border-purple-600">
+        <aside id="toc-container" class="hidden mb-4 sm:block p-4 border-l-4 border-green-500 bg-gray-100 dark:bg-gray-800 dark:border-purple-600">
             <h2 class="text-lg font-semibold">Tabla de Contenidos</h2>
             <ul id="toc-list" class="list-none ml-2"></ul>
         </aside>
 
-        <div id="post-content" class="max-w-none prose prose-dante sm:prose-lg">
-        {post.data.image && <img src={post.data.image} alt={post.data.title} class="w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />}
-        <div class="max-w-none prose prose-dante sm:prose-lg">
-            <Content />
-        </div>
+        <!-- Select para dispositivos móviles -->
+        <aside id="toc-container-mobile" class="sm:hidden mb-4 p-2 border-l-4 border-green-500 bg-gray-100 dark:bg-gray-800 dark:border-purple-600">
+            <h2 class="text-lg font-semibold">Tabla de Contenidos</h2>
+            <select id="toc-select" class="w-full bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 p-2 rounded-md">
+                <option value="" disabled selected>Selecciona una sección</option>
+            </select>
+        </aside>
 
-        <div class="mt-8 flex flex-wrap items-center gap-6 text-sm justify-between sm:mt-12 sm:text-base">
-            {
-                tags.length > 0 && (
-                    <div class="flex flex-wrap gap-x-5 gap-y-1 text-sm">
-                        {tags.map((tag) => (
-                            <a class="text-main hover:underline" href={`/tags/${slugify(tag)}`}>
-                                #{tag}
-                            </a>
-                        ))}
-                    </div>
-                )
-            }
-            <Button class="copy-url-button" aria-label="Copy link" data-url={href} data-tooltip-default="Copy link" data-tooltip-success="Copied">
-                Compartir
-            </Button>
+        <div id="post-content" class="max-w-none prose prose-dante sm:prose-lg">
+            {post.data.image && <img src={post.data.image} alt={post.data.title} class="w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />}
+            <div class="max-w-none prose prose-dante sm:prose-lg">
+                <Content />
+            </div>
+
+            <div class="mt-8 flex flex-wrap items-center gap-6 text-sm justify-between sm:mt-12 sm:text-base">
+                {
+                    tags.length > 0 && (
+                        <div class="flex flex-wrap gap-x-5 gap-y-1 text-sm">
+                            {tags.map((tag) => (
+                                <a class="text-main hover:underline" href={`/tags/${slugify(tag)}`}>
+                                    #{tag}
+                                </a>
+                            ))}
+                        </div>
+                    )
+                }
+                <Button class="copy-url-button" aria-label="Copy link" data-url={href} data-tooltip-default="Copy link" data-tooltip-success="Copied">
+                    Compartir
+                </Button>
+            </div>
         </div>
     </article>
-</BaseLayout>
 
-<script>
-    document.addEventListener('astro:page-load', () => {
-        generateTOC();
+    <script>
+        document.addEventListener('astro:page-load', () => {
+            generateTOC();
 
-        const copyUrlButton = document.querySelector('.copy-url-button') as HTMLElement | null;
-        if (copyUrlButton) {
-            copyUrlButton.addEventListener('click', () => copyUrl(copyUrlButton));
-        }
-    });
-
-    function generateTOC() {
-        const content = document.getElementById("post-content") as HTMLElement | null;
-        const tocContainer = document.getElementById("toc-container") as HTMLElement | null;
-        const tocList = document.getElementById("toc-list") as HTMLElement | null;
-
-        if (!content || !tocList || !tocContainer) return;
-
-        const headers = content.querySelectorAll("h2, h3");
-
-        if (headers.length === 0) return;
-
-        tocContainer.classList.remove("hidden");
-
-        headers.forEach((header) => {
-            if (!(header instanceof HTMLElement) || !header.textContent) return;
-
-            const id = header.textContent
-                .toLowerCase()
-                .replace(/\s+/g, '-')
-                .replace(/[^\w-]/g, '');
-            header.id = id;
-
-            const listItem = document.createElement("li");
-            listItem.classList.add(header.tagName === "H3" ? "ml-4" : "ml-0");
-
-            const link = document.createElement("a");
-            link.href = `#${id}`;
-            link.textContent = header.textContent;
-            link.classList.add("text-main", "hover:underline");
-
-            listItem.appendChild(link);
-            tocList.appendChild(listItem);
+            const copyUrlButton = document.querySelector('.copy-url-button') as HTMLElement | null;
+            if (copyUrlButton) {
+                copyUrlButton.addEventListener('click', () => copyUrl(copyUrlButton));
+            }
         });
-    }
 
-    async function copyUrl(button: HTMLElement) {
-        if (!button) return;
+        function generateTOC() {
+            const content = document.getElementById('post-content') as HTMLElement | null;
+            const tocContainer = document.getElementById('toc-container') as HTMLElement | null;
+            const tocList = document.getElementById('toc-list') as HTMLElement | null;
+            const tocContainerMobile = document.getElementById('toc-container-mobile');
+            const tocSelect = document.getElementById('toc-select');
 
-        const url = button.getAttribute('data-url') || '';
-        const label = button.innerText;
+            if (!content || !tocList || !tocContainer || !tocContainerMobile || !tocSelect) return;
 
-        try {
-            await navigator.clipboard.writeText(url);
-            button.innerText = 'Copied';
-            setTimeout(() => {
-                button.innerText = label;
-            }, 2500);
-        } catch (error) {
-            console.error("Error copying URL:", error);
+            const headers = content.querySelectorAll('h2, h3');
+
+            if (headers.length === 0) {
+                tocContainer.classList.add('hidden');
+                tocContainerMobile.classList.add('hidden');
+                return;
+            }
+
+            // tocContainer.classList.remove('hidden');
+            tocContainerMobile.classList.remove('hidden');
+
+            headers.forEach((header) => {
+                if (!(header instanceof HTMLElement) || !header.textContent) return;
+
+                const id = header.textContent
+                    .toLowerCase()
+                    .replace(/\s+/g, '-')
+                    .replace(/[^\w-]/g, '');
+                header.id = id;
+
+                const listItem = document.createElement('li');
+                listItem.classList.add(header.tagName === 'H3' ? 'ml-4' : 'ml-0');
+
+                const link = document.createElement('a');
+                link.href = `#${id}`;
+                link.textContent = header.textContent;
+                link.classList.add('text-main', 'hover:underline');
+
+                listItem.appendChild(link);
+                tocList.appendChild(listItem);
+            });
+
+            // Llenar el TOC en formato select (para dispositivos móviles)
+            tocSelect.innerHTML = '<option value="" disabled selected>Selecciona una sección</option>'; // Limpiar opciones previas
+            headers.forEach((header) => {
+                if (!(header instanceof HTMLElement) || !header.textContent) return;
+
+                const id = header.textContent
+                    .toLowerCase()
+                    .replace(/\s+/g, '-')
+                    .replace(/[^\w-]/g, '');
+                header.id = id;
+
+                const option = document.createElement('option');
+                option.value = id;
+                option.textContent = header.textContent;
+                tocSelect.appendChild(option);
+            });
+            tocSelect.addEventListener('change', (event) => {
+                const selectedId = event.target.value;
+                const section = document.getElementById(selectedId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
         }
-    }
-</script>
 
+        async function copyUrl(button: HTMLElement) {
+            if (!button) return;
 
+            const url = button.getAttribute('data-url') || '';
+            const label = button.innerText;
+
+            try {
+                await navigator.clipboard.writeText(url);
+                button.innerText = 'Copied';
+                setTimeout(() => {
+                    button.innerText = label;
+                }, 2500);
+            } catch (error) {
+                console.error('Error copying URL:', error);
+            }
+        }
+    </script>
+</BaseLayout>
