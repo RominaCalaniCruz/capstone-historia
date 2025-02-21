@@ -8,6 +8,7 @@ import Subscribe from '../../components/Subscribe.astro';
 import siteConfig from '../../data/site-config';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
 import { latestPosts } from '@/utils/content';
+import type { MarkdownHeading } from 'astro';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
     const posts = await getCollection('blog');
