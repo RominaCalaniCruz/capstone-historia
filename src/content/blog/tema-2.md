@@ -8,8 +8,8 @@ tags:
   - Guide
 seo:
   image:
-    src: '/post-13.jpg'
-    alt: Abstract snow
+    src: '/blog/tema-2.jpg'
+    alt: Tema 2
 category: 'lifestyle'
 authors:
   - name: 'Juan Peraza'
@@ -22,8 +22,6 @@ authors:
     bio: 'Estudiante de Ingenieria de Software.'
     photo: '/authors/generic.png'
 ---
-
-![Abstract snow](/post-13.jpg)
 
 **Note:** This post was created using Chat GPT to demonstrate the features of the _[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/)_.
 

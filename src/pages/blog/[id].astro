@@ -46,6 +46,7 @@ const { Content, headings } = await render(post);
                 </time>
             </div>
         </header>
+        {post.data.image && <img src={post.data.image} alt={post.data.title} class="w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />}
         <div class="max-w-none prose prose-dante sm:prose-lg">
             <Content />
         </div>
