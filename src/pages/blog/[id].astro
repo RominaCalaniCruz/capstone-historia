@@ -110,7 +110,11 @@ const { Content, headings } = await render(post);
         });
 
         // Ejecutar la función cuando la página se carga completamente
-        document.addEventListener('DOMContentLoaded', generateTOC);
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                requestAnimationFrame(generateTOC);
+            }, 100);
+        });
 
         // También ejecutarla en cada carga de Astro (para cambios de ruta sin recargar)
         document.addEventListener('astro:page-load', generateTOC);
