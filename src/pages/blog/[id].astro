@@ -109,14 +109,11 @@ const { Content, headings } = await render(post);
             });
         });
 
-        document.addEventListener('astro:after-swap', () => {
-            generateTOC();
+        // Ejecutar la función cuando la página se carga completamente
+        document.addEventListener('DOMContentLoaded', generateTOC);
 
-            const copyUrlButton = document.querySelector('.copy-url-button') as HTMLElement | null;
-            if (copyUrlButton) {
-                copyUrlButton.addEventListener('click', () => copyUrl(copyUrlButton));
-            }
-        });
+        // También ejecutarla en cada carga de Astro (para cambios de ruta sin recargar)
+        document.addEventListener('astro:page-load', generateTOC);
 
         function generateTOC() {
             const content = document.getElementById('post-content') as HTMLElement | null;
@@ -134,12 +131,12 @@ const { Content, headings } = await render(post);
                 tocContainerMobile.classList.add('hidden');
                 return;
             }
-            // Eliminar todos los elementos previos para evitar duplicaciones
-            while (tocList.firstChild) {
-                tocList.removeChild(tocList.firstChild);
-            }
 
-            // tocContainer.classList.remove('hidden');
+            // Limpiar la tabla de contenidos antes de llenarla (evita duplicados)
+            tocList.innerHTML = '';
+            tocSelect.innerHTML = '<option value="" disabled selected>Selecciona una sección</option>';
+
+            tocContainer.classList.remove('hidden');
             tocContainerMobile.classList.remove('hidden');
 
             headers.forEach((header) => {
@@ -151,6 +148,7 @@ const { Content, headings } = await render(post);
                     .replace(/[^\w-]/g, '');
                 header.id = id;
 
+                // Agregar elemento a la lista (TOC de escritorio)
                 const listItem = document.createElement('li');
                 listItem.classList.add(header.tagName === 'H3' ? 'ml-4' : 'ml-0');
 
@@ -161,26 +159,17 @@ const { Content, headings } = await render(post);
 
                 listItem.appendChild(link);
                 tocList.appendChild(listItem);
-            });
 
-            // Llenar el TOC en formato select (para dispositivos móviles)
-            tocSelect.innerHTML = '<option value="" disabled selected>Selecciona una sección</option>'; // Limpiar opciones previas
-            headers.forEach((header) => {
-                if (!(header instanceof HTMLElement) || !header.textContent) return;
-
-                const id = header.textContent
-                    .toLowerCase()
-                    .replace(/\s+/g, '-')
-                    .replace(/[^\w-]/g, '');
-                header.id = id;
-
+                // Agregar opción en el select (TOC móvil)
                 const option = document.createElement('option');
                 option.value = id;
                 option.textContent = header.textContent;
                 tocSelect.appendChild(option);
             });
-            tocSelect.addEventListener('change', (event) => {
-                const selectedId = event.target.value;
+
+            // Manejo del select para scroll suave
+            tocSelect.addEventListener('change', (event: Event) => {
+                const selectedId = (event.target as HTMLSelectElement).value;
                 const section = document.getElementById(selectedId);
                 if (section) {
                     section.scrollIntoView({ behavior: 'smooth' });
