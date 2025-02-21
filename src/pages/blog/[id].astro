@@ -27,7 +27,7 @@ type Props = { post: CollectionEntry<'blog'>; prevPost: CollectionEntry<'blog'>;
 const { href } = Astro.url;
 const { post, prevPost, nextPost } = Astro.props;
 const { title, publishDate, updatedDate, excerpt, tags = [], seo } = post.data;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? excerpt} image={seo?.image} pageType="article" showHeader={false}>
@@ -54,6 +54,8 @@ const { Content } = await render(post);
         </aside>
 
         <div id="post-content" class="max-w-none prose prose-dante sm:prose-lg">
+        {post.data.image && <img src={post.data.image} alt={post.data.title} class="w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />}
+        <div class="max-w-none prose prose-dante sm:prose-lg">
             <Content />
         </div>
 

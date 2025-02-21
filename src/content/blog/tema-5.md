@@ -2,14 +2,14 @@
 title: '5. Desafíos y el futuro de la ingeniería de plataformas'
 excerpt: 'La ingeniería de plataformas enfrenta desafíos como la escalabilidad, la automatización y la adopción de DevOps. Este blog explora el presente y futuro de la disciplina, analizando tendencias clave, mejores prácticas y cómo las plataformas pueden optimizar la productividad y eficiencia en la industria tecnológica. 🚀'
 publishDate: '2025-02-16T11:39:36.050Z'
-image: '/blog/ejemplo.png'
+image: '/blog/tema-5.jpg'
 tags:
   - Security
   - UX
   - Web
 seo:
   image:
-    src: '/post-10.jpg'
+    src: '/blog/tema-5.jpg'
     alt: Light straight lines
 category: 'lifestyle'
 authors:
@@ -29,8 +29,6 @@ authors:
     bio: 'Estudiante de Ingenieria de Software.'
     photo: '/authors/Conde.png'
 ---
-
-![Light straight lines](/post-10.jpg)
 
 **Note:** desafíos y el futuro de la ing. de plataformas(+ importante): Retos técnicos (añadir recursos humanos), antes de retos culturales van los retos tecnológicos, perspectivas a largo plazo (ampliar tema), tendencias en equipos de desarrollo (cambiar nombre a -> "análisis de las implicaciones de las tecnologías"): los subtemas seran -> desde la parte de empresa, desde la parte tecnológica, desde la parte técnica, desde la parte de software, Investigación sobre herramientas emergentes para la ingeniería de plataformas (desarrollar más el tema)
 

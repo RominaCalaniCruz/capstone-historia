@@ -2,14 +2,14 @@
 title: '2. Tendencias de Plataformas'
 excerpt: 'Explora las tendencias emergentes en la ingeniería de plataformas y su impacto en el desarrollo de software. Desde automatización y DevOps hasta plataformas internas, este blog analiza innovaciones clave que optimizan la eficiencia de los equipos y transforman la industria tecnológica. Mantente al día con los cambios que están dando forma al futuro. 📊'
 publishDate: '2025-02-20T11:39:36.050Z'
-image: '/blog/ejemplo.png'
+image: '/blog/tema-2.jpg'
 tags:
   - Web
   - Guide
 seo:
   image:
-    src: '/post-13.jpg'
-    alt: Abstract snow
+    src: '/blog/tema-2.jpg'
+    alt: Tema 2
 category: 'lifestyle'
 authors:
   - name: 'Juan Peraza'
@@ -22,8 +22,6 @@ authors:
     bio: 'Estudiante de Ingenieria de Software.'
     photo: '/authors/generic.png'
 ---
-
-![Abstract snow](/post-13.jpg)
 
 **Note:** This post was created using Chat GPT to demonstrate the features of the _[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/)_.
 
