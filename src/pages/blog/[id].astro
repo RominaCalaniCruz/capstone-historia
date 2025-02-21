@@ -105,7 +105,7 @@ const { Content, headings } = await render(post);
 
             if (!content || !tocList || !tocContainer || !tocContainerMobile || !tocSelect) return;
 
-            const headers = content.querySelectorAll('h2, h3');
+            const headers = content.querySelectorAll('h2');
 
             if (headers.length === 0) {
                 tocContainer.classList.add('hidden');
@@ -180,3 +180,14 @@ const { Content, headings } = await render(post);
         }
     </script>
 </BaseLayout>
+
+<style>
+    h2 {
+        margin-bottom: 2px !important;
+    }
+
+    h3 {
+        margin-top: 3px !important;
+        margin-bottom: 3px !important;
+    }
+</style>

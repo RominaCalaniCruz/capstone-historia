@@ -12,8 +12,6 @@ category: 'lifestyle'
 authors: []
 ---
 
-![Light straight lines](/post-10.jpg)
-
 **Note:** Aqui iria las referencias de imagenes (desarrollar más el tema)
 
 Algunos historiadores del sector remontan los orígenes del SaaS a la década de 1950, cuando las aplicaciones que se ejecutaban en mainframes se distribuían a terminales remotas. Pero el SaaS tal como lo conocemos hoy comenzó en 1999, cuando Salesforce lanzó su sistema de gestión de relaciones con los clientes (CRM) como software alojado en la nube y distribuido a navegadores web.
