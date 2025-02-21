@@ -134,6 +134,10 @@ const { Content, headings } = await render(post);
                 tocContainerMobile.classList.add('hidden');
                 return;
             }
+            // Eliminar todos los elementos previos para evitar duplicaciones
+            while (tocList.firstChild) {
+                tocList.removeChild(tocList.firstChild);
+            }
 
             // tocContainer.classList.remove('hidden');
             tocContainerMobile.classList.remove('hidden');
