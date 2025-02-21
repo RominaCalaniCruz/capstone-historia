@@ -110,31 +110,25 @@ const { Content, headings } = await render(post);
         });
 
         document.addEventListener('astro:page-load', () => {
-            waitForContent('#post-content').then(() => generateTOC());
+            waitForContent('#post-content', generateTOC);
         });
-        // Esperar a que el contenido del post esté disponible en el DOM
-        async function waitForContent(selector: string, timeout = 3000) {
-            return new Promise<void>((resolve) => {
+
+        // Esperar a que el contenido esté disponible
+        function waitForContent(selector: string, callback: () => void, maxAttempts = 30, interval = 100) {
+            let attempts = 0;
+
+            const checkContent = () => {
                 const content = document.querySelector(selector);
-                if (content) return resolve();
+                if (content) {
+                    callback();
+                } else if (attempts < maxAttempts) {
+                    attempts++;
+                    setTimeout(checkContent, interval);
+                }
+            };
 
-                const observer = new MutationObserver((mutations, obs) => {
-                    if (document.querySelector(selector)) {
-                        obs.disconnect();
-                        resolve();
-                    }
-                });
-
-                observer.observe(document.body, { childList: true, subtree: true });
-
-                // Opcional: Forzar la resolución tras un tiempo límite (previene bloqueos)
-                setTimeout(() => {
-                    observer.disconnect();
-                    resolve();
-                }, timeout);
-            });
+            checkContent();
         }
-
         function generateTOC() {
             const content = document.getElementById('post-content') as HTMLElement | null;
             const tocContainer = document.getElementById('toc-container') as HTMLElement | null;
