@@ -99,13 +99,17 @@ const { Content, headings } = await render(post);
 
         if (headers.length === 0) return;
 
-        // Eliminar todos los elementos previos para evitar duplicaciones
         while (tocList.firstChild) {
             tocList.removeChild(tocList.firstChild);
         }
 
+        // Si no hay encabezados, ocultar la tabla de contenidos
+        if (headers.length === 0) {
+            tocContainer.classList.add('hidden');
+            return;
+        }
 
-        tocContainer.classList.remove("hidden");
+        tocContainer.classList.remove('hidden');
 
         headers.forEach((header) => {
             if (!(header instanceof HTMLElement) || !header.textContent) return;
