@@ -41,15 +41,24 @@ const { Content, headings } = await render(post);
                 {title}
             </h1>
             <div class="mt-4 text-sm">
-                <time class="text-sm" datetime={post.data.publishDate}>
+                <time class="text-sm" datetime={post.data.publishDate.toISOString()}>
                     {getFormattedDate(post.data.publishDate)}
                 </time>
             </div>
         </header>
+
+        <!-- Contenedor de la Tabla de Contenidos -->
+        <aside id="toc-container" class="hidden mb-6 p-4 border-l-4 border-green-500 bg-gray-100 dark:bg-gray-800 dark:border-purple-600">
+            <h2 class="text-lg font-semibold">Tabla de Contenidos</h2>
+            <ul id="toc-list" class="list-none ml-2"></ul>
+        </aside>
+
+        <div id="post-content" class="max-w-none prose prose-dante sm:prose-lg">
         {post.data.image && <img src={post.data.image} alt={post.data.title} class="w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />}
         <div class="max-w-none prose prose-dante sm:prose-lg">
             <Content />
         </div>
+
         <div class="mt-8 flex flex-wrap items-center gap-6 text-sm justify-between sm:mt-12 sm:text-base">
             {
                 tags.length > 0 && (
@@ -62,40 +71,74 @@ const { Content, headings } = await render(post);
                     </div>
                 )
             }
-            <Button class="copy-url-button" aria-label="Copy link" data-url={href} data-tooltip-default="Copy link" data-tooltip-success="Copied"
-                >Compartir</Button
-            >
+            <Button class="copy-url-button" aria-label="Copy link" data-url={href} data-tooltip-default="Copy link" data-tooltip-success="Copied">
+                Compartir
+            </Button>
         </div>
     </article>
-    <!-- {
-        (prevPost || nextPost) && (
-            <div class="my-16 sm:my-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Read Next</h2>
-                {nextPost && <PostPreview post={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
-                {prevPost && <PostPreview post={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
-            </div>
-        )
-    } -->
 </BaseLayout>
 
 <script>
     document.addEventListener('astro:page-load', () => {
-        const copyUrlButton = document.querySelector('.copy-url-button') as HTMLButtonElement;
-        copyUrlButton?.addEventListener('click', async () => {
-            await copyUrl(copyUrlButton);
+        generateTOC();
+
+        const copyUrlButton = document.querySelector('.copy-url-button') as HTMLElement | null;
+        if (copyUrlButton) {
+            copyUrlButton.addEventListener('click', () => copyUrl(copyUrlButton));
+        }
+    });
+
+    function generateTOC() {
+        const content = document.getElementById("post-content") as HTMLElement | null;
+        const tocContainer = document.getElementById("toc-container") as HTMLElement | null;
+        const tocList = document.getElementById("toc-list") as HTMLElement | null;
+
+        if (!content || !tocList || !tocContainer) return;
+
+        const headers = content.querySelectorAll("h2, h3");
+
+        if (headers.length === 0) return;
+
+        tocContainer.classList.remove("hidden");
+
+        headers.forEach((header) => {
+            if (!(header instanceof HTMLElement) || !header.textContent) return;
+
+            const id = header.textContent
+                .toLowerCase()
+                .replace(/\s+/g, '-')
+                .replace(/[^\w-]/g, '');
+            header.id = id;
+
+            const listItem = document.createElement("li");
+            listItem.classList.add(header.tagName === "H3" ? "ml-4" : "ml-0");
+
+            const link = document.createElement("a");
+            link.href = `#${id}`;
+            link.textContent = header.textContent;
+            link.classList.add("text-main", "hover:underline");
+
+            listItem.appendChild(link);
+            tocList.appendChild(listItem);
         });
+    }
 
-        async function copyUrl(button: HTMLButtonElement) {
-            let url = button.getAttribute('data-url') || '';
-            let label = button.innerText;
+    async function copyUrl(button: HTMLElement) {
+        if (!button) return;
 
+        const url = button.getAttribute('data-url') || '';
+        const label = button.innerText;
+
+        try {
             await navigator.clipboard.writeText(url);
-
             button.innerText = 'Copied';
-
             setTimeout(() => {
                 button.innerText = label;
             }, 2500);
+        } catch (error) {
+            console.error("Error copying URL:", error);
         }
-    });
+    }
 </script>
+
+

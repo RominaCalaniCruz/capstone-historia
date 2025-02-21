@@ -44,6 +44,7 @@ export type SiteConfig = {
     projectsPerPage?: number;
 };
 
+
 const siteConfig: SiteConfig = {
     title: 'Blog Grupo C',
     subtitle: 'Historia de la Ingenieria de Software | Jala University, 2025',
