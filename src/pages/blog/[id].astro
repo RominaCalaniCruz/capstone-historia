@@ -110,7 +110,7 @@ const { Content, headings } = await render(post);
         }
 
         tocContainer.classList.remove('hidden');
-
+        
         headers.forEach((header) => {
             if (!(header instanceof HTMLElement) || !header.textContent) return;
 

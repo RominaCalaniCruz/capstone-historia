@@ -7,7 +7,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://juanPeraza0125.github.io',
+    site: 'https://blog-grupo-c.netlify.app',
     integrations: [
         mdx(),
         sitemap(),

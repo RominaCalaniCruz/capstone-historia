@@ -36,6 +36,16 @@
     }
     */
 
+    .margin-b {
+        margin-bottom: 8px !important;
+    }
+    .margin-t {
+        margin-top: 8px !important;
+    }
+    .centro {
+        text-align: center;
+    }
+
     /* Green */
     /*
     :root {

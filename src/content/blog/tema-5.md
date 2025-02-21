@@ -3,10 +3,6 @@ title: '5. Desafíos y el futuro de la ingeniería de plataformas'
 excerpt: 'La ingeniería de plataformas enfrenta desafíos como la escalabilidad, la automatización y la adopción de DevOps. Este blog explora el presente y futuro de la disciplina, analizando tendencias clave, mejores prácticas y cómo las plataformas pueden optimizar la productividad y eficiencia en la industria tecnológica. 🚀'
 publishDate: '2025-02-16T11:39:36.050Z'
 image: '/blog/tema-5.jpg'
-tags:
-  - Security
-  - UX
-  - Web
 seo:
   image:
     src: '/blog/tema-5.jpg'
@@ -30,93 +26,48 @@ authors:
     photo: '/authors/Conde.png'
 ---
 
-**Note:** desafíos y el futuro de la ing. de plataformas(+ importante): Retos técnicos (añadir recursos humanos), antes de retos culturales van los retos tecnológicos, perspectivas a largo plazo (ampliar tema), tendencias en equipos de desarrollo (cambiar nombre a -> "análisis de las implicaciones de las tecnologías"): los subtemas seran -> desde la parte de empresa, desde la parte tecnológica, desde la parte técnica, desde la parte de software, Investigación sobre herramientas emergentes para la ingeniería de plataformas (desarrollar más el tema)
+<h2 class="font-bold italic">Retos en Ingeniería de Plataformas</h2>
 
-## **Retos en Ingeniería de Plataformas**
+<h3 class="font-bold centro margin-b" style="margin-bottom: 0px !important;">Retos Técnicos</h3>
 
-#### **- (Moises Hernandez y Joaquin Antezana)**
+<h5 class="italic margin-t" style="margin-top: 1px !important;">Escrito por Joaquin Antezana</h5>
 
-### **Retos Técnicos**
+<h3 class="font-bold centro margin-b" style="margin-bottom: 0px !important;">Retos de Recursos Humanos</h3>
 
-#### **-(Antezana)**
+<h5 class="italic margin-t" style="margin-top: 1px !important;">Escrito por Joaquin Antezana</h5>
 
-- Complejidad en la arquitectura de sistemas y mantenimiento.
+<h3 class="font-bold centro margin-b" style="margin-bottom: 0px !important;">Retos tecnológicos</h3>
 
----
+<h5 class="italic margin-t" style="margin-top: 1px !important;">Escrito por Moises Hernandez</h5>
 
-### **Retos de Recursos Humanos**
+<h3 class="font-bold centro margin-b" style="margin-bottom: 0px !important;">Retos culturales</h3>
 
-#### **- (Antezana)**
+<h5 class="italic margin-t" style="margin-top: 1px !important;">Escrito por Moises Hernandez</h5>
 
-- Escasez de talento especializado en plataformas modernas.
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
----
+<h2 class="margin-t font-bold italic">Implicaciones de las Tecnologías</h2>
 
-### **Retos tecnológicos**
+<h3 class="font-bold centro margin-b" style="margin-bottom: 0px !important;">En la Empresa</h3>
 
-#### **- (Moises)**
+<h5 class="italic margin-t" style="margin-top: 1px !important;">Escrito por Mercedes Soto</h5>
 
-- Adaptación a nuevas tecnologías disruptivas.
+<h3 class="font-bold centro margin-b" style="margin-bottom: 0px !important;">En la Tecnología</h3>
 
----
+<h5 class="italic margin-t" style="margin-top: 1px !important;">Escrito por Mercedes Soto</h5>
 
-### **Retos culturales**
+<h3 class="font-bold centro margin-b" style="margin-bottom: 0px !important;">En lo Técnico</h3>
 
-#### **- (Moises)**
+<h5 class="italic margin-t" style="margin-top: 1px !important;">Escrito por Santiago Conde</h5>
 
-- Cambio organizacional para adoptar la ingeniería de plataformas.
+<h3 class="font-bold centro margin-b" style="margin-bottom: 0px !important;">En el Software</h3>
 
----
+<h5 class="italic margin-t" style="margin-top: 1px !important;">Escrito por Santiago Conde</h5>
 
-## **Implicaciones de las Tecnologías**
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
-#### **- (Mercedes Soto)**
+<h2 class="font-bold italic margin-b">Perspectivas a Largo Plazo</h2>
 
-### **En la Empresa**
+<h5 class="italic margin-t">Escrito por Romina Calani</h5>
 
-#### **- (Soto)**
-
-- Cómo impacta en la estrategia y crecimiento empresarial.
-
----
-
-### **En las Tecnologias**
-
-#### **- (Soto)**
-
-- Evolución del hardware y software en plataformas modernas
-
----
-
-### **En lo Técnico**
-
-#### **- (Conde)**
-
-- Necesidades de infraestructura y soporte
-
----
-
-### **En el Software**
-
-#### **- (Conde)**
-
-- Herramientas y frameworks más utilizados en el futuro.
-
----
-
-## **Perspectivas a Largo Plazo: Tecnologías Disruptivas y Tendencias Futuras**
-
-#### **- (Romina)**
-
-### **Impacto de la inteligencia artificial en la automatización de plataformas**
-
-#### **- (Romina)**
-
-- Desarrollar más el tema
-
----
-
-## Conclusion
-
-- Conclusión general del equipo.
-- Si tienes una idea de conclusión mandarla al grupo para que aportemos a esa conclusión y formular algo coherente entre todos.
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">

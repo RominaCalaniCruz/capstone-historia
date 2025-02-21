@@ -4,7 +4,6 @@ excerpt: 'La ingeniería de plataformas optimiza el desarrollo de software al cr
 publishDate: '2025-02-23T11:39:36.050Z'
 image: '/blog/ejemplo.png'
 isFeatured: true
-
 seo:
   image:
     src: '/post-14.jpg'
@@ -19,37 +18,26 @@ authors:
     photo: '/authors/generic.png'
 ---
 
-![Wavy lines](/post-14.jpg)
+<h2 class="font-bold italic margin-b">Definición de la Ingeniería de Plataformas</h2>
 
-**Note:** This post was created using Chat GPT to demonstrate the features of the _[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/)_.
+<h5 class="italic margin-t">Escrito por Fabricio Flores</h5>
 
-> Web frameworks are the architectural blueprints that empower developers to build the digital landscapes of tomorrow.
+<h3 class="font-bold centro margin-t">¿Qué es la ingeniería de plataformas?</h3>
 
-## **Definición de la Ingeniería de Plataformas**
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
-#### **- (Fabricio Flores)**
+<h2 class="margin-t font-bold italic margin-b">Historia y Evolución</h2>
 
-- Que es la ingeniería de plataformas?
-
----
-
-## **Historia y Evolución**
-
-#### **- (Fabricio Flores)**
+<h5 class="italic margin-t">Escrito por Fabricio Flores</h5>
 
 - Análisis de la evolución de este campo desde sus inicios hasta la actualidad
 
----
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
-## **Comparativa con otros enfoques**
+<h2 class="font-bold italic margin-b">Comparativa con otros enfoques</h2>
 
-#### **- (Nicolas Parra)**
+<h5 class="italic margin-t">Escrito por Nicolas Parra</h5>
 
 - Diferencias entre la ingeniería de plataformas y metodologías como DevOps y SRE
 
----
-
-## Conclusion
-
-- Conclusión general del equipo.
-- Si tienes una idea de conclusión mandarla al grupo para que aportemos a esa conclusión y formular algo coherente entre todos.
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
