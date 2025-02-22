@@ -110,25 +110,14 @@ const { Content, headings } = await render(post);
         });
 
         document.addEventListener('astro:page-load', () => {
-            waitForContent('#post-content', generateTOC);
+            generateTOC();
+
+            const copyUrlButton = document.querySelector('.copy-url-button') as HTMLElement | null;
+            if (copyUrlButton) {
+                copyUrlButton.addEventListener('click', () => copyUrl(copyUrlButton));
+            }
         });
 
-        // Esperar a que el contenido esté disponible
-        function waitForContent(selector: string, callback: () => void, maxAttempts = 30, interval = 100) {
-            let attempts = 0;
-
-            const checkContent = () => {
-                const content = document.querySelector(selector);
-                if (content) {
-                    callback();
-                } else if (attempts < maxAttempts) {
-                    attempts++;
-                    setTimeout(checkContent, interval);
-                }
-            };
-
-            checkContent();
-        }
         function generateTOC() {
             const content = document.getElementById('post-content') as HTMLElement | null;
             const tocContainer = document.getElementById('toc-container') as HTMLElement | null;
@@ -148,9 +137,9 @@ const { Content, headings } = await render(post);
 
             // Limpiar la tabla de contenidos antes de llenarla (evita duplicados)
             tocList.innerHTML = '';
+
             tocSelect.innerHTML = '<option value="" disabled selected>Selecciona una sección</option>';
 
-            // tocContainer.classList.remove('hidden');
             tocContainerMobile.classList.remove('hidden');
 
             headers.forEach((header) => {
