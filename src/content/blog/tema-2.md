@@ -24,7 +24,7 @@ authors:
 
 <h5 class="italic margin-t">Escrito por Fabricio Ibarra</h5>
 
-<img src="/public/blog/trends.jpg" alt="imagen del tema" class="mx-auto block max-w-full max-h-[350px] object-contain rounded-md" />
+<img src="/blog/trends.jpg" alt="imagen del tema" class="mx-auto block max-w-full max-h-[350px] object-contain rounded-md" />
 
 <p class="margin-t margin-b text-base" >
 El Platform Engineering ha evolucionado significativamente en los últimos años, consolidándose como un pilar fundamental dentro del ecosistema DevOps. Según el informe "2024 State of DevOps Report: The Evolution of Platform Engineering" de Perforce Software, esta disciplina no solo ha demostrado su capacidad para optimizar la eficiencia de los desarrolladores, sino que también ha transformado la manera en que las organizaciones gestionan su infraestructura y seguridad. En esta sección, exploraremos las principales tendencias que están marcando el futuro del Platform Engineering y su impacto en la industria tecnológica.
@@ -66,7 +66,7 @@ La transición hacia modelos híbridos y multicloud es otra tendencia clave. Las
 A medida que crece la adopción del multicloud, los equipos de Platform Engineering están diseñando arquitecturas más modulares y resilientes, asegurando que las aplicaciones puedan operar en entornos mixtos sin comprometer el rendimiento o la seguridad.
 </p>
 
-<img src="/public/blog/trends2.png" alt="imagen del tema" class="mx-auto block max-w-full max-h-[350px] object-contain rounded-md" />
+<img src="/blog/trends2.png" alt="imagen del tema" class="mx-auto block max-w-full max-h-[350px] object-contain rounded-md" />
 
 <hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin: 20px 0px !important">
 
@@ -133,7 +133,7 @@ A pesar de estos retos, el futuro de la computación en la nube es prometedor. C
 
 <h5 class="italic margin-t">Escrito por Juan Peraza</h5>
 
-<img src="/public/blog/devops.png" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
+<img src="/blog/devops.png" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 <p class="margin-t margin-b text-base" >
 En el mundo actual de la tecnología, la automatización y DevOps han transformado la forma en que se gestionan las plataformas en la nube. Gracias a estas prácticas, las empresas pueden mejorar la eficiencia, reducir errores y acelerar el desarrollo de software. <br>A continuación, exploramos su impacto en la gestión de plataformas cloud y su integración con DevOps.
 </p>
@@ -150,7 +150,7 @@ La automatización también mejora la seguridad, aplicando parches de manera aut
 
 <p class="italic margin-b centro text-2xl font-serif font-bold">Integración con DevOps para Mejorar la Eficiencia en el Desarrollo</p>
 
-<img src="/public/blog/devops2.png" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
+<img src="/blog/devops2.png" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 
 <p class="margin-t margin-b text-base" >
 DevOps se basa en la colaboración entre equipos de desarrollo y operaciones, impulsado por la automatización para acelerar la entrega de software, en otras palabras “permite que los roles que antes estaban aislados (desarrollo, operaciones de TI, ingeniería de la calidad y seguridad) se coordinen y colaboren para producir productos mejores y más confiables. Al adoptar una cultura de DevOps junto con prácticas y herramientas de DevOps, los equipos adquieren la capacidad de responder mejor a las necesidades de los clientes, aumentar la confianza en las aplicaciones que crean y alcanzar los objetivos empresariales en menos tiempo.” (Microsoft, 2023)
@@ -170,7 +170,7 @@ La combinación de herramientas como Prometheus y Grafana permite a los equipos 
 
 <p class="italic margin-b centro text-2xl font-serif font-bold">Tendencia: AIOps y el Futuro de la Automatización</p>
 
-<img src="/public/blog/devops3.png" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
+<img src="/blog/devops3.png" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 
 <p class="margin-t margin-b text-base" >
 Una evolución clave en la automatización cloud es el uso de AIOps (Artificial Intelligence for IT Operations). Esta tecnología aplica inteligencia artificial y machine learning para:

@@ -61,7 +61,7 @@ Por último, la comunicación es un reto, los ingenieros de plataformas trabajan
 En el mundo de la ingeniería de plataformas, la automatización de procesos se presenta como uno de los principales desafíos. Se trata de crear scripts y flujos de trabajo que hagan más eficientes tareas repetitivas, que a menudo consumen mucho tiempo. Si bien suena como una solución ideal, el cambio no es sencillo. Las empresas deben ajustar sus estructuras y procesos para reducir el trabajo manual, lo cual puede generar resistencia, ya que la implementación de nuevas tecnologías puede ser costosa y compleja. Sin embargo, la automatización es crucial para mantenerse competitivos y mejorar los tiempos de desarrollo, lo que se traduce en una mayor eficiencia a largo plazo. 
 </p>
 
-<img src="/public/blog/Imagen1.png" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
+<img src="/blog/Imagen1.png" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 
 <p class="margin-t margin-b text-base" >
 Otro reto importante es la <strong> adopción de la computación en la nube.</strong> Las empresas están migrando cada vez más hacia la nube debido a la flexibilidad y escalabilidad que ofrece. Pero este proceso no es tan sencillo. Muchas empresas todavía dependen de infraestructuras locales, lo que crea dificultades para hacer la transición. Además, cambiar a la nube no es solo un ajuste tecnológico; también implica modificar la forma en que las operaciones funcionan para adaptarse a plataformas que ofrecen mayores capacidades, pero también presentan nuevos riesgos y complejidades. 
@@ -73,7 +73,7 @@ Otro reto importante es la <strong> adopción de la computación en la nube.</st
 Por último, una de las tecnologías más disruptivas en este campo es <strong>la Inteligencia Artificial Generativa.</strong> Esta tecnología permite automatizar y mejorar los procesos de desarrollo de software, haciendo todo mucho más eficiente. Su potencial es enorme, pero para aprovecharlo, las empresas deben contar con una infraestructura tecnológica sólida y una integración adecuada. 
 </p>
 
-<img src="/public/blog/Imagen2.jpg" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
+<img src="/blog/Imagen2.jpg" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 
 <h3 class="font-bold centro margin-b" style="margin-bottom: 0px !important;">Retos culturales</h3>
 
@@ -86,7 +86,7 @@ Más allá de la tecnología, un aspecto clave para la implementación exitosa d
 Uno de los mayores retos culturales es fomentar la <strong>colaboración interequipos.</strong> La ingeniería de plataformas promueve una colaboración más estrecha entre los equipos de desarrollo, IT y operaciones. Sin embargo, muchas empresas aún operan con un modelo de silos, donde los departamentos trabajan de manera aislada. Para que la ingeniería de plataformas funcione, es necesario eliminar estas barreras y fomentar una cultura de trabajo conjunto y comunicación constante. 
 </p>
 
-<img src="/public/blog/Imagen3.jpg" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
+<img src="/blog/Imagen3.jpg" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 
 <p class="margin-t margin-b text-base" >
 Otro desafío importante es <strong>la curva de aprendizaje.</strong> Los nuevos miembros de los equipos tienen que adaptarse rápidamente a nuevas herramientas y procesos. Las empresas deben facilitar este proceso mediante formación continua y recursos accesibles para ayudar a los empleados a integrar eficientemente las nuevas tecnologías. Esto no solo mejora la eficiencia, sino que también reduce la resistencia al cambio. 
@@ -95,7 +95,7 @@ Otro desafío importante es <strong>la curva de aprendizaje.</strong> Los nuevos
 Además, <strong>la autonomía de los desarrolladores</strong> juega un papel crucial. Con la ingeniería de plataformas, los desarrolladores tienen más control sobre sus proyectos, lo que fomenta la innovación. Sin embargo, esto requiere un ajuste en la estructura organizacional, ya que el trabajo se vuelve más descentralizado, con mayor responsabilidad para los desarrolladores, pero también con mayores beneficios en términos de productividad y satisfacción laboral. 
 </p>
 
-<img src="/public/blog/Imagen4.webp" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
+<img src="/blog/Imagen4.webp" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 
 <hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin-bottom: 20px !important">
 
@@ -161,7 +161,7 @@ la IA/ML desempeñará un papel más importante en la ingeniería de plataformas
 
 <p class=" margin-b text-base" ><strong>Enfoque en la sostenibilidad: </strong>
 a medida que las preocupaciones ambientales sigan aumentando, la ingeniería de plataformas se centrará cada vez más en la sostenibilidad. Esto implicará optimizar el uso de los recursos, reducir la huella de carbono de los centros de datos y adoptar prácticas ecológicas en el desarrollo y la implementación de software.  </p>
-<img src="/public/blog/sostenibilidad.jpg" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
+<img src="/blog/sostenibilidad.jpg" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 
 <p class=" margin-b text-base" ><strong>Automatización mejorada de la seguridad y el cumplimiento normativo:</strong>
 con la creciente complejidad de los sistemas de software, la automatización de los procesos de seguridad y cumplimiento normativo será cada vez más crítica. Las herramientas que pueden aplicar automáticamente políticas de seguridad, detectar vulnerabilidades y garantizar el cumplimiento normativo en diversos entornos se convertirán en un estándar en la ingeniería de plataformas. 
