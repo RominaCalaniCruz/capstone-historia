@@ -175,7 +175,7 @@ con la creciente complejidad de los sistemas de software, la automatización de 
 empresas con plataformas de colaboración para su equipo de trabajo, han comenzado a incorporar la Realidad Aumentada y Realidad Virtual para crear experiencias más inmersivas y colaborativas. Si bien esto aun no es tan usado en el área del desarrollo de software, si tuvo repercusión en el ámbito educativo. Los estudiantes podían interactuar en un entorno más realista con el objetivo de lograr reemplazar la experiencia que se tenía en una clase presencial y no perder aquella conexión entre estudiantes-profesor. 
  </p>
 <img src="https://www.magisnet.com/wp-content/uploads/2021/10/Realidad-mixta-pag.27.jpg" alt="imagen del tema" class="mx-auto block max-w-full max-h-[350px] object-contain rounded-md" />
-<p class="italic margin-b text-xl font-serif font-semibold">Reflexiones finales:</p>
+<p class="italic margin-b text-xl font-serif font-semibold">Para los proximos años:</p>
 
 <p class="margin-t margin-b text-base" >
 Las tendencias globales, como la ingeniería aumentada con IA, siguen dando forma al panorama de la ingeniería de plataformas: el 52 % de los equipos utilizan IA para tareas y flujos de trabajo específicos, y el 13 % la integra ampliamente. Mejorar la experiencia de los desarrolladores también se ha convertido en una prioridad para retener el talento y aumentar la productividad, con la ingeniería de plataformas a la vanguardia.   
@@ -189,6 +189,9 @@ Para 2025, la AI Generativa agilizará tareas complejas como la escritura de có
 <p class="margin-t margin-b text-base" >
 Para 2026, se espera que el 80 % de las grandes organizaciones de ingeniería de software establecerán equipos de ingeniería de plataformas como proveedores internos de servicios, componentes y herramientas reutilizables para la entrega de aplicaciones, frente al 45 % en 2022. 
 </p>
+<hr style="border: 2px solid rgba(93, 117, 94, 0.59); margin: 20px 0px !important">
+<p class="italic margin-b text-xl font-serif">Conferencia sobre el Futuro de la Ingenieria de Plataformas:</p>
+
 <div class="w-full max-w-3xl mx-auto aspect-video rounded-lg overflow-hidden">
   <iframe 
     class="w-full h-full"
