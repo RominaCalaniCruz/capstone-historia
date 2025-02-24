@@ -1,6 +1,6 @@
 ---
 title: '6. Conclusión General'
-excerpt: 'Concluida la investigación sobre todos los temas relacionados con este blog, analizamos y llegamos a una reflexión final sobre la importancia de la Ingeniería de Plataformas y los aspectos que debemos tener en cuenta para el futuro cercano.'
+excerpt: 'Concluida la investigación sobre todos los temas relacionados con este blog, analizamos y llegamos a una reflexión final sobre la importancia de la Ingeniería de Plataformas y los aspectos que debemos tener en cuenta para el futuro próximo.'
 publishDate: '2025-02-15T11:39:36.050Z'
 image: '/blog/conclusion-final.gif'
 tags: [design, architecture, interior]

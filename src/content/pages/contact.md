@@ -25,10 +25,11 @@ seo:
   - **Retos Técnicos y de Recursos Humanos** [Leer →](/blog/tema-5)
 - [Santiago.Conde0125@jala.university](mailto:Santiago.Conde0125@jala.university)
   - **Implicaciones de las Tecnologías en lo Técnico y en el software** [Leer →](/blog/tema-5)
+  - **Comparativa con otros enfoques** [Leer →](/blog/tema-1)
 - [Lucas.Delossantos0125@jala.university](mailto:Lucas.Delossantos0125@jala.university)
   - **Comparación de Plataformas - Seguridad en Plataformas Cloud Computing** [Leer →](/blog/tema-32)
 - [Nicolas.Parra0125@jala.university](mailto:Nicolas.Parra0125@jala.university)
-  - **Comparativa con Otros Enfoques** [Leer →](/blog/tema-1)
+  - **No participio**
 - [Andreina.Olivares0125@jala.university](mailto:Andreina.Olivares0125@jala.university)
   - **Evaluación de Costos y Eficiencia en Diferentes Plataformas** [Leer →](/blog/tema-3)
 - [Jaider.Ramirez0125@jala.university](mailto:Jaider.Ramirez0125@jala.university)
