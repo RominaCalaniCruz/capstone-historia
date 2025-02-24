@@ -2,11 +2,11 @@
 title: '6. Conclusión General'
 excerpt: ''
 publishDate: '2025-02-15T11:39:36.050Z'
-image: '/blog/ejemplo.png'
+image: '/blog/pt.jpg'
 tags: [design, architecture, interior]
 seo:
   image:
-    src: '/post-10.jpg'
+    src: '/blog/pt.jpg'
     alt: Light straight lines
 category: 'lifestyle'
 authors: []

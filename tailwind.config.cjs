@@ -68,6 +68,16 @@ module.exports = {
                                 fontSize: '1.66667em',
                                 lineHeight: 1.3
                             }
+                        },
+                        table: {
+                            width: '100%',
+                            borderCollapse: 'collapse'
+                        },
+                        'tbody td:first-child, tfoot td:first-child': {
+                            paddingLeft: '0.75rem' // Añade padding en la primera columna
+                        },
+                        'tbody td, tfoot td': {
+                            padding: '0.75rem'
                         }
                     }
                 },
