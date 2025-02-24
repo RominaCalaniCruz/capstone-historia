@@ -1,8 +1,8 @@
 ---
 title: '1.	Introducción a la ingeniería de plataformas'
-excerpt: 'La ingeniería de plataformas optimiza el desarrollo de software al crear entornos eficientes para los equipos.'
+excerpt: 'La ingeniería de plataformas es un enfoque moderno que optimiza el desarrollo, la implementación y la gestión de infraestructuras tecnológicas. Al centralizar herramientas, automatizar procesos y mejorar la colaboración entre equipos, permite a las empresas acelerar la innovación y garantizar sistemas más eficientes y escalables. Con el auge del cloud computing y la automatización, esta disciplina se ha convertido en un pilar clave para el éxito en la era digital.'
 publishDate: '2025-02-23T11:39:36.050Z'
-image: '/blog/tema-1.jpg'
+image: '/blog/tema-1-p.jpg'
 isFeatured: true
 seo:
   image:
@@ -83,7 +83,7 @@ Ingeniería de plataformas busca facilitar el trabajo de desarrollo, DevOps acel
 Cada metodología tiene su lugar según las necesidades de la organización y el tipo de sistemas que se desarrollan y operan. 
 </p>
 
-<img src="https://www.ikusi.com/mx/wp-content/uploads/sites/2/2023/04/seguridad-en-iot.jpeg" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
+<img src="https://www.eng-ex.dev/content/images/size/w1200/2022/12/1-1.png" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 
 <hr style="border: 2px solid rgba(93, 117, 94, 0.59);margin: 20px 0px !important;">
 <h2 class="font-bold italic margin-b">Referencias</h2>
