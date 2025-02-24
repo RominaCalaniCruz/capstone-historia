@@ -29,7 +29,7 @@ seo:
 - [Lucas.Delossantos0125@jala.university](mailto:Lucas.Delossantos0125@jala.university)
   - **Comparación de Plataformas - Seguridad en Plataformas Cloud Computing** [Leer →](/blog/tema-32)
 - [Nicolas.Parra0125@jala.university](mailto:Nicolas.Parra0125@jala.university)
-  - **No participio**
+  - **No participó.**
 - [Andreina.Olivares0125@jala.university](mailto:Andreina.Olivares0125@jala.university)
   - **Evaluación de Costos y Eficiencia en Diferentes Plataformas** [Leer →](/blog/tema-3)
 - [Jaider.Ramirez0125@jala.university](mailto:Jaider.Ramirez0125@jala.university)
