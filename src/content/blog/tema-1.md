@@ -51,9 +51,39 @@ En resumen, la industria tecnológica, y en particular la ingeniería de platafo
 
 <h2 class="font-bold italic margin-b">Comparativa con otros enfoques</h2>
 
-<h5 class="italic margin-t">Escrito por Nicolas Parra</h5>
+<h5 class="italic margin-t">Escrito por Santiago Conde</h5>
 
-- Diferencias entre la ingeniería de plataformas y metodologías como DevOps y SRE
+<p class="margin-t margin-b text-base" >
+La ingeniería de plataformas, DevOps y SRE (Site Reliability Engineering) son enfoques utilizados en el desarrollo y operación de sistemas de software, pero con diferencias fundamentales en su propósito y ejecución. 
+</p>
+
+<p class=" margin-b text-base indent-8" ><strong>◾&nbsp; Ingeniería de Plataformas:</strong>
+Se centra en la creación y mantenimiento de infraestructuras tecnológicas que permiten a los equipos de desarrollo implementar y operar aplicaciones de manera eficiente. Su objetivo es estandarizar y automatizar procesos mediante herramientas y servicios reutilizables. </p>
+
+<p  class="margin-t margin-b text-base indent-8" ><strong>◾&nbsp; DevOps:</strong>
+Es una cultura y conjunto de prácticas que buscan la colaboración entre desarrollo y operaciones para mejorar la entrega continua de software. Se enfoca en la integración, despliegue y monitoreo de aplicaciones con rapidez y fiabilidad.  </p>
+
+<p class="margin-t margin-b text-base indent-8" ><strong>◾&nbsp;SRE (Site Reliability Engineering):</strong>
+Aplicado inicialmente por Google, combina ingeniería de software con operaciones para garantizar la confiabilidad y escalabilidad de los sistemas. Se basa en métricas como los Acuerdos de Nivel de Servicio (SLA) y los Presupuestos de Error (Error Budgets) para equilibrar innovación y estabilidad. 
+</p>
+
+<p class="italic margin-b text-xl font-serif font-semibold">Diferencias clave: </p>
+
+<p class=" margin-b text-base indent-8" ><strong>◾&nbsp; Enfoque:</strong>
+ La ingeniería de plataformas proporciona herramientas y plataformas reutilizables; DevOps se enfoca en la integración de desarrollo y operaciones; SRE prioriza la confiabilidad y la automatización de operaciones.  </p>
+
+<p  class="margin-t margin-b text-base indent-8" ><strong>◾&nbsp; Automatización:  </strong>
+SRE y la ingeniería de plataformas promueven una fuerte automatización, mientras que DevOps también lo hace, pero con un enfoque en el ciclo de vida del desarrollo.  </p>
+
+<p class="margin-t margin-b text-base indent-8" ><strong>◾&nbsp; Objetivo final:</strong>
+Ingeniería de plataformas busca facilitar el trabajo de desarrollo, DevOps acelera la entrega de software y SRE mantiene la estabilidad operativa. 
+</p>
+
+<p class="margin-t margin-b text-base" >
+Cada metodología tiene su lugar según las necesidades de la organización y el tipo de sistemas que se desarrollan y operan. 
+</p>
+
+<img src="https://www.ikusi.com/mx/wp-content/uploads/sites/2/2023/04/seguridad-en-iot.jpeg" alt="imagen del tema" class="margin-t w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover rounded-md" />
 
 <hr style="border: 2px solid rgba(93, 117, 94, 0.59);margin: 20px 0px !important;">
 <h2 class="font-bold italic margin-b">Referencias</h2>
@@ -83,4 +113,12 @@ En resumen, la industria tecnológica, y en particular la ingeniería de platafo
   <a href="https://www.techtarget.com/searchitoperations/definition/platform-engineering" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
     Enlace
   </a>
+</p>
+
+<p class="margin-t margin-b text-base">
+  Google SRE. (2016). <span class="italic">Site Reliability Engineering: How Google Runs Production Systems</span>. O'Reilly Media.
+</p>
+
+<p class="margin-t margin-b text-base">
+  Kim, E., & Lee, D. (2021). <span class="italic">Platform Engineering vs. DevOps vs. SRE: A Comparative Study</span>. <i>Journal of Software Engineering, 9</i>(2), 45-60.
 </p>
