@@ -2,7 +2,7 @@
 title: '3. Beneficios Clave para las Empresas: Comparación de Plataformas'
 excerpt: 'Descubre cómo la ingeniería de plataformas optimiza el desarrollo de software, mejorando la eficiencia, la automatización y la colaboración en las empresas. Exploramos sus beneficios clave, desde la reducción de costos hasta la aceleración de la entrega de productos, impulsando la innovación y la competitividad en el mercado. 💰'
 publishDate: '2025-02-18T11:39:36.050Z'
-image: '/blog/ejemplo.png'
+image: '/blog/cloud.png'
 seo:
   image:
     src: '/post-12.jpg'
